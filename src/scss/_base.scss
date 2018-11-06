@@ -1,0 +1,51 @@
+
+// CUSTOM VARIABLES
+
+// colors
+$color-primary: #003C55;
+$color-secondary: #28A519;
+$color-tertiary: #C8FF00;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+// fonts
+$font-headers: 'Kanit', sans-serif;
+$font-body: 'Archivo Narrow', sans-serif;
+
+// font-sizes
+$headers-size: 4.7rem;
+$body-size: 1.76rem;
+$prod-size: 2.8rem;
+$menu-size: 1.6rem;		// legal-size
+
+//// BASE SETUP	////
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+	font-family: $font-body;
+	font-weight: 400;
+	font-size: $body-size;
+	color: $color-white;
+}
+
+a {
+	&:link,
+	&:visited {
+		text-decoration: none;
+	}
+}
